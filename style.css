@@ -596,7 +596,7 @@ span{
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 1rem;
     background:var(--bg-color);
-    color: var(--bg-color);
+    color: var(--main-color);
     font-size: 1.4rem;
     outline:#5b9bd5;
     transition: .3s ease;
