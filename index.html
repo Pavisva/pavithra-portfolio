@@ -319,33 +319,30 @@
 
 
                 <!-- RIGHT -->
-                <div class="contact-form">
-
-                    <form
-                        action="https://script.google.com/macros/s/AKfycbymxAXYCtSyQo2iLp5oClqScbznlJcckAVtNSUGsVhELyyEq2vQx_OfTRbnzDYTyBx_XA/exec"
-                        method="POST" target="hidden_iframe" id="contactForm">
-                        <div class="input-box">
-                            <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-                            <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-                        </div>
-                        <input type="text" name="entry.1065046570" placeholder="Subject" required>
-                        <textarea name="entry.1166974658" rows="7" placeholder="Tell me about your project..."
-                            required></textarea>
-                        <button type="submit" class="btn" id="submitBtn">
-                            Send Message
-                            <i class="bx bx-send"></i>
-                        </button>
-                        <!-- Submission Status Message Container -->
-                        <div id="formStatus" class="form-status"></div>
-                    </form>
-
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="bx bx-notepad"></i>
+                    </div>
+                    <h3>Send Message via Google Form</h3>
+                    <p>Have a project inquiry or message? Click below to fill out my official contact form.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqlenODONCaaXVmhEX6yRA-Od0QMoz83vuS-gAMpZtV-8Y4w/viewform?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="btn google-form-btn">
+                        Fill Google Form
+                        <i class="bx bx-link-external"></i>
+                    </a>
                 </div>
             </div>
             <div class="contact-bottom">
                 <p>© 2026 Pavithra V. Designed & Built with ❤️</p>
                 <a href="#home">Back to top ↑</a>
             </div>
+        </div>
+
+        </div>
+        <div class="contact-bottom">
+            <p>© 2026 Pavithra V. Designed & Built with ❤️</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
         </div>
 
     </section>
@@ -357,31 +354,3 @@
 </body>
 
 </html>
-
-<div class="contact-form">
-    <!-- Corrected Google Form Action Endpoint -->
-    <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLScqlenODONCaaXVmhEX6yRA-Od0QMoz83vuS-gAMpZtV-8Y4w/formResponse"
-        method="POST" target="hidden_iframe" id="contactForm">
-        <div class="input-box">
-            <input type="text" name="entry.2005620554" placeholder="Your Name" required>
-            <input type="email" name="entry.1045781291" placeholder="Your Email" required>
-        </div>
-        <input type="text" name="entry.1065046570" placeholder="Subject" required>
-        <textarea name="entry.1166974658" rows="7" placeholder="Tell me about your project..." required></textarea>
-        <button type="submit" class="btn" id="submitBtn">
-            Send Message
-            <i class="bx bx-send"></i>
-        </button>
-        <!-- Submission Status Message Container -->
-        <div id="formStatus" class="form-status"></div>
-    </form>
-    <!-- Hidden iframe prevents page redirect on submit -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-</div>
-</div>
-<div class="contact-bottom">
-    <p>© 2026 Pavithra V. Designed & Built with ❤️</p>
-    <a href="#home">Back to top ↑</a>
-</div>
-</div>
