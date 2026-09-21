@@ -641,7 +641,24 @@ span{
     color: var(--main-color);
     font-size: 1.4rem;
 }
-
+.form-status {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background: rgba(11, 37, 69, 0.1);
+    display: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.form-status.show-success {
+    display: block;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
 
 
 /* ================================

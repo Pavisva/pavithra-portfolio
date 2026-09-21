@@ -88,20 +88,36 @@ revealOnScroll();
 // ================================
 // CONTACT FORM
 // ================================
-let form = document.querySelector(".contact-form form");
-
+let form = document.querySelector("#contactForm");
+let submitBtn = document.querySelector("#submitBtn");
+let formStatus = document.querySelector("#formStatus");
+let iframe = document.querySelector("#hidden_iframe");
+let isSubmitting = false;
 if (form) {
-
     form.addEventListener("submit", function() {
-
-        setTimeout(function() {
-
-            alert("Thank you! Your message has been received.");
-
-            form.reset();
-
-        }, 500);
-
+        isSubmitting = true;
+        if (submitBtn) {
+            submitBtn.innerHTML = 'Sending... <i class="bx bx-loader-alt bx-spin"></i>';
+            submitBtn.disabled = true;
+        }
     });
-
+    if (iframe) {
+        iframe.addEventListener("load", function() {
+            if (isSubmitting) {
+                isSubmitting = false;
+                if (submitBtn) {
+                    submitBtn.innerHTML = 'Send Message <i class="bx bx-send"></i>';
+                    submitBtn.disabled = false;
+                }
+                if (formStatus) {
+                    formStatus.textContent = "Thank you! Your message has been sent successfully.";
+                    formStatus.classList.add("show-success");
+                    setTimeout(function() {
+                        formStatus.classList.remove("show-success");
+                    }, 6000);
+                }
+                form.reset();
+            }
+        });
+    }
 }
